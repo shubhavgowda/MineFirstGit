@@ -10,12 +10,10 @@ public class AccountPage {
 	@FindBy(xpath="//a[text()='Edit your account information']")
 	WebElement editYourAccountInformationOption;
 
-
 	public AccountPage(WebDriver driver) {
 		this.driver=driver;
 		PageFactory.initElements(driver, this);
 	}
-
 	public boolean getDisplayStatusOfEditYourAccountInformationOption() {
 		boolean displayStatus=editYourAccountInformationOption.isDisplayed();
 		return displayStatus;
